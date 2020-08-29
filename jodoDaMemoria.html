@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Mémoria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="StyleJogo.css">
+</head>
+<body>
+    
+    <!-- <div class="max-width">
+        <button onclick="start();" class="bg-green">Iniciar</button>
+        <button onclick="pause();" class="bg-yellow">Pausar</button>
+        <button onclick="stop();" class="bg-red">Parar</button>
+        
+    </div> -->
+<div class="title">
+    <h1>JOGO DA MEMÓRIA</h1>
+    <h1 id="counter">00:00:00</h1>
+</div>
+    <div id="gameBoard">
+
+       <!--  <div id="uahsu" class="card" data-icon="soso/patrick">
+            <div class="card_front">
+                <img src="https://scontent.fsjk1-1.fna.fbcdn.net/v/t1.0-9/104743276_2780224485414741_640269582017494253_o.jpg?_nc_cat=101&_nc_sid=84a396&_nc_ohc=GcQqButzo-gAX9TUFmp&_nc_ht=scontent.fsjk1-1.fna&oh=1d642a095ee27971c6ea77236920e76f&oe=5F6ACBC7"  alt="">
+            </div>
+            <div class="card_back">
+                &lt/&gt
+            </div>         
+        </div> -->
+
+    </div>
+
+        <div id="gameOver">
+            <div>
+                <p>PARABÉNS</p>
+                <p>VOCÊ GANHOU !!!</p>
+            </div>
+           <a onclick="stop()"> <button id="restart" onclick="restart()">Jogar Novamente</button></a><br>
+           <h1 id="counter1">00:00:00</h1>
+        </div>
+
+        <script src="cron.js"></script>
+        <script src="jogo.js"></script>
+        <script src="usuario.js"></script>
+</body>
+</html>

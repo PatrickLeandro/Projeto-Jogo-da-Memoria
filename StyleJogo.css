@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Righteous', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #101c2c;
+}
+img{
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+}
+.card{
+    width: 95px;
+    height: 95px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card_back, .card_front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.55);
+    backface-visibility: hidden;
+    
+}
+.flip{
+    transform: rotateY(180deg);
+    
+    transition: transform .5s;
+}
+
+.card_front{
+    background-color: #101c2c;
+    transform: rotateY(180deg);
+}
+
+.card_back{
+    color: #101c2c;
+    background-color: #05c3ff;
+    font-size: 30px;/* 
+    display: none; */
+
+}
+
+
+#gameOver{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: aliceblue;
+    font-size: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#restart{
+    padding: 20px;
+    font-size: 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#gameBoard{
+    max-width: 750px;
+    height: 380px;
+    padding: 10px 20px 10px 20px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 15px solid black;
+    border-radius: 20px;
+
+}
+.max-width {
+max-width: 240px;
+width: 100%;
+padding: 5px;
+box-sizing: border-box;
+margin-top: 0%;
+box-shadow: 0 0 5px #FFF;
+text-align: center;
+color: white;
+}
+
+h1 {
+font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+padding: 10px;
+border: none;
+outline: none;
+font-family: 'Segoe UI';
+font-size: 1.1em;
+transition: all .5s;
+cursor: pointer;
+border-radius: 25px;
+}
+
+button:hover {
+background-color: #a1c0d1;
+}
+
+button:active {
+background-color: #111;
+}
+
+.bg-green {
+background-color: #b2d1a1;
+}
+
+.bg-yellow {
+background-color: #d1cba1;
+}
+
+.bg-red {
+background-color: #d1a1a1;
+}
+@media screen and (max-width: 500px) {
+img{
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+}
+.card{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    
+}
+h1{
+font-size: 30px;
+position: relative;
+top: 30px;
+}
+.title{
+width: 100%;
+position: fixed;
+top: 30px;
+
+
+}
+#gameBoard{
+    padding: 10px 20px 10px 20px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr  ;
+    gap: 20px;
+    background-color: #ffffff;
+    border: 15px solid black;
+    border-radius: 20px;
+    height: 600px;
+
+}
+
+body{
+    font-family: 'Righteous', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #101c2c;
+    height: 800px;
+}
+}
+.title{ 
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-size: 30px;
+}
