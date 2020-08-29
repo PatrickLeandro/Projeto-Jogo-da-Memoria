@@ -55,6 +55,26 @@ img{
     display: none; */
 
 }
+#telaInicial{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.920);
+    color: aliceblue;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#telaInicial p{
+    font-size: 30px;
+    max-width: 500px;
+}
+#telaInicial h1{
+    font-size: 70px;
+}
 
 
 #gameOver{
@@ -70,13 +90,14 @@ img{
     align-items: center;
     flex-direction: column;
 }
-#restart{
+#restart, #gameOn{
     padding: 20px;
     font-size: 20px;
     background-color: yellow;
     border: none;
     border-radius: 10px;
     margin-top: 20px;
+    font-weight: 600;
 }
 #gameBoard{
     max-width: 750px;
@@ -135,57 +156,59 @@ background-color: #d1cba1;
 .bg-red {
 background-color: #d1a1a1;
 }
-@media screen and (max-width: 500px) {
-img{
-    width: 70px;
-    height: 70px;
-    border-radius: 15px;
-}
-.card{
-    width: 75px;
-    height: 75px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform .5s;
-    
-}
-h1{
-font-size: 30px;
-position: relative;
-top: 30px;
-}
-.title{
-width: 100%;
-position: fixed;
-top: 30px;
-
-
-}
-#gameBoard{
-    padding: 10px 20px 10px 20px;
-    display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr  ;
-    gap: 20px;
-    background-color: #ffffff;
-    border: 15px solid black;
-    border-radius: 20px;
-    height: 600px;
-
-}
-
-body{
-    font-family: 'Righteous', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #101c2c;
-    height: 800px;
-}
-}
 .title{ 
     position: absolute;
     top: 10px;
     color: white;
     font-size: 30px;
 }
+@media screen and (max-width: 500px) {
+    img{
+        width: 70px;
+        height: 70px;
+        border-radius: 15px;
+    }
+    .card{
+        width: 75px;
+        height: 75px;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform .5s;
+        
+    }
+    #telaInicial h1{
+    font-size: 35px;
+    }
+    #telaInicial p{
+        font-size: 20px;
+        position: relative;
+        max-width: 330px;
+    }
+
+    .title{
+    width: 100%;
+    position: fixed;
+    top: 30px;
+    }
+    #gameBoard{
+        padding: 10px 20px 10px 20px;
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr  ;
+        gap: 20px;
+        background-color: #ffffff;
+        border: 15px solid black;
+        border-radius: 20px;
+        height: 600px;
+    }
+
+    body{
+        font-family: 'Righteous', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #101c2c;
+        height: 800px;
+    }
+}
+

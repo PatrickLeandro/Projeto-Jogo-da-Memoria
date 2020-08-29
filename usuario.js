@@ -98,7 +98,11 @@ function restart() {
     a = 0
     let gameOverLayer = document.getElementById("gameOver");
     gameOverLayer.style.display = 'none';
+    t
     
+}
+function gameOn() {
+    document.getElementById("telaInicial").style.display = 'none';
 }
 
 
