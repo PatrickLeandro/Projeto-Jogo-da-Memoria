@@ -187,6 +187,9 @@ background-color: #d1a1a1;
         position: relative;
         max-width: 300px;
     }
+    #telaInicial h1{
+        font-size: 38px;
+    }
 
     .title{
     width: 100%;
