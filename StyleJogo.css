@@ -69,11 +69,11 @@ img{
     flex-direction: column;
 }
 #telaInicial p{
-    font-size: 30px;
-    max-width: 500px;
+    font-size: 35px;
+    max-width: 600px;
 }
 #telaInicial h1{
-    font-size: 70px;
+    font-size: 60px;
 }
 
 
@@ -174,15 +174,18 @@ background-color: #d1a1a1;
         position: relative;
         transform-style: preserve-3d;
         transition: transform .5s;
-        
     }
-    #telaInicial h1{
-    font-size: 35px;
+
+    h1{
+    font-size: 30px;
+    position: relative;
+    top: 5px;
     }
+
     #telaInicial p{
         font-size: 20px;
         position: relative;
-        max-width: 330px;
+        max-width: 300px;
     }
 
     .title{
@@ -190,6 +193,7 @@ background-color: #d1a1a1;
     position: fixed;
     top: 30px;
     }
+
     #gameBoard{
         padding: 10px 20px 10px 20px;
         display: grid;
