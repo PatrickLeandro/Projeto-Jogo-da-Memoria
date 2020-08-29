@@ -1,2 +1,2 @@
 # Projeto Jogo da Memoria
- Projeto de um jogo da menória deito em HTML-CSS-JAVASCRIPT
+ Projeto de um jogo da memória desenvolvido em com as tecnologias HTML-CSS-JAVASCRIPT
