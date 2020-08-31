@@ -32,7 +32,13 @@
         </div> -->
 
     </div>
-
+        <div id="telaInicial">
+            <h1>Seja Bem-vindo(a)</h1><br>
+            <p>O jogo da memória é um clássico jogo formado por peças que apresentam uma figura em um dos lados. Cada figura se repete em duas peças diferentes.</p><br>
+            <p>Encontre os pares no menor tempo possivel!</p>
+            <p>Digite seu nome: <input type="text" id="jogador"></p>
+            <a onclick="capturarNome()"><button id="gameOn" onclick="gameOn()">Jogar</button></a>
+        </div>
         <div id="gameOver">
             <div>
                 <p>PARABÉNS</p>
@@ -40,13 +46,9 @@
             </div>
            <a onclick="stop()"> <button id="restart" onclick="restart()">Jogar Novamente</button></a><br>
            <h1 id="counter1">00:00:00</h1>
+           <h1 id="jogador1">Aqui vai um texto</h1>
         </div>
-        <div id="telaInicial">
-            <h1>Seja bem vindo(a)! </h1><br>
-            <p>O jogo da memória é um clássico jogo formado por peças que apresentam uma figura em um dos lados. Cada figura se repete em duas peças diferentes.</p><br>
-            <p>Encontre os pares no menor tempo possivel!</p>
-            <button id="gameOn" onclick="gameOn()">Iniciar Jogo</button>
-        </div>
+        
 
         <script src="cron.js"></script>
         <script src="jogo.js"></script>

@@ -2,6 +2,13 @@
         const BACK  = "card_back"
         const CARD = "card"
         const ICON = "icon"
+        var jogador = "";
+        function capturarNome() {
+            jogador = document.getElementById('jogador').value;
+            document.getElementById('jogador1').innerHTML = jogador;
+        }
+
+        
 
         
         startGame();
@@ -59,6 +66,7 @@
             if (a == 0) {
                 start();
                 a = 1;
+                document.getElementById('usuario123').innerText='mudei'+ nome;
             }
             this.classList.add("flip");
             if (game.secondCard) {
