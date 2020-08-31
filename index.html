@@ -18,7 +18,7 @@
     </div> -->
 <div class="title">
     <h1>JOGO DA MEMÓRIA</h1>
-    <h1 id="counter">00:00:00</h1>
+    <h2 id="counter">00:00:00</h2>
 </div>
     <div id="gameBoard">
 
@@ -34,19 +34,22 @@
     </div>
         <div id="telaInicial">
             <h1>Seja Bem-vindo(a)</h1><br>
-            <p>O jogo da memória é um clássico jogo formado por peças que apresentam uma figura em um dos lados. Cada figura se repete em duas peças diferentes.</p><br>
-            <p>Encontre os pares no menor tempo possivel!</p>
+            <p>O jogo da memória é um clássico jogo formado por peças que apresentam uma figura em um dos lados. Cada figura se repete em duas peças diferentes.</p>
+            <p>Encontre os pares no menor tempo possivel!</p><br>
             <p>Digite seu nome: <input type="text" id="jogador"></p>
             <a onclick="capturarNome()"><button id="gameOn" onclick="gameOn()">Jogar</button></a>
         </div>
         <div id="gameOver">
-            <div>
-                <p>PARABÉNS</p>
-                <p>VOCÊ GANHOU !!!</p>
-            </div>
-           <a onclick="stop()"> <button id="restart" onclick="restart()">Jogar Novamente</button></a><br>
-           <h1 id="counter1">00:00:00</h1>
-           <h1 id="jogador1">Aqui vai um texto</h1>
+            <h1>PARABÉNS</h1>
+            <h2>VOCÊ GANHOU !!!</h2>
+            <div class="informacoes">
+                <p id="jogador1"></p>
+                <p id="counter1">00:00:00</p>
+                <p id="jogadas"></p>
+                <p id="acertos"></p>
+                <p id="erros"></p>
+            </div>    
+            <a onclick="stop()"> <button id="restart" onclick="restart()">Jogar Novamente</button></a>       
         </div>
         
 

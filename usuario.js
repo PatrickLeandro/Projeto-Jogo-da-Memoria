@@ -1,11 +1,18 @@
-        const FRONT = "card_front"
-        const BACK  = "card_back"
-        const CARD = "card"
-        const ICON = "icon"
+        const FRONT = "card_front";
+        const BACK  = "card_back";
+        const CARD = "card";
+        const ICON = "icon";
         var jogador = "";
+        var jogadas = 0;
+        var acertos = 0;
+        var erros = 0;
+
+
+
+
         function capturarNome() {
             jogador = document.getElementById('jogador').value;
-            document.getElementById('jogador1').innerHTML = jogador;
+            document.getElementById('jogador1').innerHTML ="Jogador: "+ jogador;
         }
 
         
@@ -71,25 +78,34 @@
             if (game.secondCard) {
                     
                 
-                
+                jogadas++;
+
                 if (game.checkMatch()){
-                    game.clearCards();
-                    if (game.checkGameOver()){
-                        setTimeout(() => {
-                        let gameOverLayer = document.getElementById("gameOver");
-                        gameOverLayer.style.display = 'flex';
-                        pause();
-                        }, 1100);
-                    }
+                        game.clearCards();
+                        acertos++;    
+                        document.getElementById('jogadas').innerHTML="Jogadas: " + jogadas;
+                        document.getElementById('acertos').innerHTML="Acertos: " + acertos;
+                        if (game.checkGameOver()){
+                            setTimeout(() => {                               
+                                let gameOverLayer = document.getElementById("gameOver");
+                                gameOverLayer.style.display = 'flex';
+                                pause();
+                            }, 1100);
+                        }
                 }else{
 
                     setTimeout(() => {
-                    let firstCardView = document.getElementById(game.firstCard.id);
-                    let secondCardView = document.getElementById(game.secondCard.id);
+                        
+                        erros++;
+                        document.getElementById('jogadas').innerHTML="Jogadas: " + jogadas;
+                        document.getElementById('erros').innerHTML="Erros: " + erros;
 
-                    firstCardView.classList.remove('flip');
-                    secondCardView.classList.remove('flip');
-                    game.unflipCards();
+                        let firstCardView = document.getElementById(game.firstCard.id);
+                        let secondCardView = document.getElementById(game.secondCard.id);
+
+                        firstCardView.classList.remove('flip');
+                        secondCardView.classList.remove('flip');
+                        game.unflipCards();
 
                     }, 1000);
                 };
@@ -103,6 +119,9 @@ function restart() {
     game.clearCards();
     startGame();
     a = 0
+    jogadas = 0;
+    acertos = 0;
+    erros = 0; 
     let gameOverLayer = document.getElementById("gameOver");
     gameOverLayer.style.display = 'none';
     

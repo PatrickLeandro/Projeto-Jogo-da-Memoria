@@ -46,7 +46,7 @@ function timer() {
     
     //Insere o valor tratado no elemento counter
     document.getElementById('counter').innerText = format;
-    document.getElementById('counter1').innerText = format;
+    document.getElementById('counter1').innerText = "Tempo: "+ format;
 
     //Retorna o valor tratado
     return format;
