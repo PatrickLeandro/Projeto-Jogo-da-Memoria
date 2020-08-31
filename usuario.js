@@ -66,7 +66,6 @@
             if (a == 0) {
                 start();
                 a = 1;
-                document.getElementById('usuario123').innerText='mudei'+ nome;
             }
             this.classList.add("flip");
             if (game.secondCard) {
@@ -106,7 +105,7 @@ function restart() {
     a = 0
     let gameOverLayer = document.getElementById("gameOver");
     gameOverLayer.style.display = 'none';
-    t
+    
     
 }
 function gameOn() {
