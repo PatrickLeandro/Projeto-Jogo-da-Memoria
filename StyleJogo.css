@@ -196,19 +196,35 @@ background-color: #d1a1a1;
     }
 
     h1{
-    font-size: 30px;
-    position: relative;
-    top: 5px;
+        font-size: .7em;
+        padding: 10px;
+    }
+    h2{
+        font-size: .6em;
+        position: relative;
+        top: 5px;
+    }
+    #telaInicial h1{
+        font-size: .7em;
+    }
+    #telaInicial h2{
+        font-size: .6em;
     }
 
     #telaInicial p{
-        font-size: 20px;
-        position: relative;
+        font-size: .4em;
         max-width: 300px;
     }
-    #telaInicial h1{
-        font-size: 38px;
+    #gameOver p{
+        font-size: .6em;
+        max-width: 300px;
     }
+    #gameOver h1{
+        padding: 10px;
+        
+        font-size: .8em;
+    }
+    
 
     .title{
     width: 100%;
