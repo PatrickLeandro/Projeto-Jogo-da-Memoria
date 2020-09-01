@@ -221,7 +221,9 @@ background-color: #d1a1a1;
     }
     #gameOver h1{
         padding: 10px;
-        
+        font-size: 1.1em;
+    }
+    #gameOver h2{
         font-size: .8em;
     }
     
