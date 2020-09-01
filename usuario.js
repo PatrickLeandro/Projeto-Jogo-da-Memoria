@@ -52,12 +52,12 @@
             if (face === FRONT) {
                 let iconElement = document.createElement('img');
                 iconElement.classList.add(ICON);
-                iconElement.src = card.icon;
+                iconElement.src = "./icons/" + card.icon + ".jpeg";
                 cardElementFace.appendChild(iconElement);
             }else{
                 cardElementFace.innerHTML = "&lt/&gt";
             }
-            element.appendChild(cardElementFace)
+            element.appendChild(cardElementFace);
         }
 
         
