@@ -6,9 +6,12 @@
         var jogadas = 0;
         var acertos = 0;
         var erros = 0;
+        var escolha = 0;
 
 
 
+        var tema = document.getElementById('tema');
+        
 
         function capturarNome() {
             jogador = document.getElementById('jogador').value;
