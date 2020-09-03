@@ -6,12 +6,44 @@
         var jogadas = 0;
         var acertos = 0;
         var erros = 0;
-        var escolha = 0;
+        var escolha = 1;
+        var temaEscolhido = document.getElementsByName('tema');
 
 
 
-        var tema = document.getElementById('tema');
         
+        function escolhaTema() {
+               
+            if (temaEscolhido[0].checked) {
+                escolha = 0;
+            }   else if(temaEscolhido[1].checked){
+                        escolha = 1;
+                    }   else{
+                            escolha = 2
+                }
+        }
+
+        
+
+
+
+function escolhaTema() {
+
+    
+    var temaEscolhido = document.getElementsByName('tema');
+
+    if (temaEscolhido[0].checked) {
+        escolha = 0;
+    }
+    else if (temaEscolhido[1].checked) {
+        escolha = 1;
+    }
+    else {
+        escolha = 2;
+    }
+}
+
+
 
         function capturarNome() {
             jogador = document.getElementById('jogador').value;
@@ -55,7 +87,13 @@
             if (face === FRONT) {
                 let iconElement = document.createElement('img');
                 iconElement.classList.add(ICON);
-                iconElement.src = "./icons/" + card.icon + ".jpeg";
+                if (escolha == 0) {
+                    iconElement.src = "./icons/marvel/" + card.icon + ".jpeg";
+                } else if (escolha == 1) {
+                         iconElement.src = "./icons/dc/" + card.icon + ".jpeg";
+                        } else {
+                        iconElement.src = "./icons/infantil/" + card.icon + ".jpeg";
+                 }
                 cardElementFace.appendChild(iconElement);
             }else{
                 cardElementFace.innerHTML = "&lt/&gt";

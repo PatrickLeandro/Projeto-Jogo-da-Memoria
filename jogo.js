@@ -57,7 +57,7 @@ let game = {
 
 
     fotos: [
-        'aquaman', 'arlequina', 'batman', 'coringa', 'lanterna-verde', 'mulher-gato', 'mulher-maravilha', 'shazam', 'suuper-man'
+        '1', '2', '3', '4', '5', '6', '7', '8', '9'
     ],
 
     

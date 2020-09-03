@@ -39,16 +39,16 @@
 
 
             <p>
-                <input type="radio" name="tema" id="marvel" checked><label for="marvel"><img src="icons/marvel-logo.jpeg"></label>
-                <input type="radio" name="tema" id="dc"><label for="dc"><img src="icons/dc-logo.jpeg" ></label>
-                <input type="radio" name="tema" id="infantil"><label for="infantil"><img src="icons/kids-logo.jpeg" ></label>
+                <input type="radio" name="temaEscolhido" id="marvel" checked><label for="marvel"><img src="icons/marvel-logo.jpeg"></label>
+                <input type="radio" name="temaEscolhido" id="dc"><label for="dc"><img src="icons/dc-logo.jpeg" ></label>
+                <input type="radio" name="temaEscolhido" id="infantil"><label for="infantil"><img src="icons/kids-logo.jpeg" ></label>
             </p>
 
 
 
 
             <p>Digite seu nome: <input type="text" id="jogador"></p>
-            <a onclick="capturarNome()"><button id="gameOn" onclick="gameOn()">Jogar</button></a>
+            <a onclick="escolhaTema()"><a onclick="capturarNome()"><button id="gameOn" onclick="gameOn()">Jogar</button></a></a>
         </div>
         <div id="gameOver">
             <h1>PARABÉNS</h1>
@@ -63,7 +63,6 @@
             <a onclick="stop()"> <button id="restart" onclick="restart()">Jogar Novamente</button></a>       
         </div>
         
-
         <script src="cron.js"></script>
         <script src="jogo.js"></script>
         <script src="usuario.js"></script>
